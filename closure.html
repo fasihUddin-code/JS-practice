@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// var i=90;
+// function show(){
+//     var a=12;
+//     console.log("a:"+a+"\ni:"+i);
+// }
+// show();
+
+
+// function show(){
+//     var a= "A is a Local Variable in Outer Function";
+//     console.log(a)
+//     function innerFunction(){
+//         var b = "B is a Local Variable in Inner Function";
+//         console.log(b);
+       
+//     }
+//     innerFunction();
+//     console.log(b);
+// }
+
+// show();
+
+
+
+function generator(num) {
+    return function (a) { 
+        return a+num;
+     }
+    
+}
+
+var sumBy2 = generator(7);
+console.log(sumBy2(3));
+
+
+</script>
+</html>

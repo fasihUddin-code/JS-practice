@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+class Father{
+    showFMoney(){
+        return "Father's Money <br>";
+    }
+}
+
+class Son extends Father{
+    showSMoney(){
+        return "Son's Money";
+    }
+}
+
+var s = new Son();
+document.write(s.showFMoney());
+document.write(s.showSMoney());
+
+
+</script>
+
+</html>

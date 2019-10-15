@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    
+</body>
+
+<script>
+
+class Car{
+    constructor(brand){
+        this.carname = brand;
+    }
+
+    present(){
+        return "I have a " + this.carname;
+    }
+
+}
+
+class Model extends Car{
+    constructor(brand,mod){
+        super(brand);
+        this.model = mod;
+    }
+    show(){
+        return this.present() + ', it is a ' + this.model;
+    }
+}
+
+var myCar = new Model("Honda","City");
+
+document.getElementById("demo").innerText = myCar.show();
+
+
+
+</script>
+
+
+
+</html>

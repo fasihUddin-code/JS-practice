@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hId"> <!-- This is a comment --> Heading A </h1>
+    <p id="pId">
+        Lorem ipsum dolor sit amet.dolor sit amet.dolor sit amet.
+    </p>
+    
+</body>
+<script>
+
+//Document
+// document.write("---document---"+"<br>");
+// document.write(document.nodeName+"<br>");
+// document.write(document.nodeType +"<br>");
+// document.write(document.nodeValue+"<br>");
+
+//Text
+document.write("---Element---"+"<br>");
+var ele = document.getElementById("hId").firstChild.nextSibling.innerHTML;
+// document.write(ele.firstChild.nextSibling.nodeName+"<br>");
+// document.write(ele.firstChild.nextSibling.nodeType +"<br>");
+// document.write(ele.firstChild.nextSibling.nodeValue+"<br>");
+
+document.write(ele)
+
+
+</script>
+</html>

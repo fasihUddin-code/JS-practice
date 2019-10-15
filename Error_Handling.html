@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Practice</title>
+</head>
+<body>
+    <h1>Error finding</h1>
+    <p>This example demonstrates how to use <b>catch</b> to diplay an error.</p>
+
+    <p id="demo"></p>
+    
+
+    <script>
+        //source
+        //https://www.w3schools.com/js/js_errors.asp
+   try{
+       greeting("welcome");
+   }
+   catch(err){
+       document.getElementById("demo").innerHTML = err.message;
+   } 
+    
+    </script>
+
+</body>
+</html>

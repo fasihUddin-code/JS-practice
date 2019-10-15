@@ -1,0 +1,169 @@
+/* header section custom css */
+.bgImg{
+    background: url('../image/images.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 660px;
+    border: 1px solid black;
+}
+.headerSet{
+    padding-top: 205px;
+    box-sizing: border-box;
+}
+.headerSet h2{
+    font-size: 42px;
+}
+
+.headerSet h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+.navbar-nav .nav-item >a:hover{
+    color: #007bff!important;
+}
+
+/* ourservices Custom Css */
+.ourServices{
+    padding: 100px 0px 60px;
+    height: 700px;
+}
+.ourServices h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.rowSetting{
+    padding: 80px 0px !important ;
+
+}
+.imgSetting{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.fa-shopping-cart{
+    margin-top: 24px;
+}
+.fa-desktop{
+    margin-top: 24px;
+}
+
+.fa-lock {
+    margin-top: 24px;
+}
+
+.rowSetting p{
+    padding: 10px;
+    color: #606060 !important;
+
+}
+.rowSetting h2{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* portfolio section css */
+.portfolio{
+    height: auto;
+    width: 100%;
+    padding: 100px 0px 50px;
+}
+.portfolio h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.card{
+    margin-top: 40px;
+    width: 100%;
+}
+/* .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+} */
+.card img{
+    width:100%;
+    height: 200px;
+}
+
+/* our team section css */
+.ourTeam{
+    height: auto;
+    margin: 100px 0px 60px ;
+    width: 100% ;
+}
+.ourTeam h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.teamSetting{
+    margin-top: 50px;
+}
+
+/* Footer section css */
+.footer{
+    font-size: 50px;
+}
+.footer h6{
+    line-height: 28px;
+}
+
+/* For responsive use Media Queries */
+@media(min-width: 992px){
+
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+
+
+}
+@media(min-width: 576px) and (max-width: 767px){
+
+}
+@media(min-width: 460px) and (max-width: 575px){
+    .headerSet h2{
+        font-size: 22px;
+    }
+    
+    .headerSet h1{
+        font-size: 42px;
+        font-weight: bold;
+    }
+    .ourServices{
+        height: 1200px;
+    }
+    /* .ourTeam{
+        height: 700px;
+        margin: 100px 0px 60px ;
+        width: 100% ;
+    } */
+    .portfolio{
+        height: 2700px;
+    }
+
+}
+@media (max-width:479px){
+    .headerSet h2{
+        font-size: 22px;
+    }
+    
+    .headerSet h1{
+        font-size: 42px;
+        font-weight: bold;
+    }
+    .ourServices{
+        height: 1200px;
+    }
+    /* .ourTeam{
+        height: 700px;
+        margin: 100px 0px 60px ;
+        width: 100% ;
+    } */
+    .portfolio{
+        height: 2700px;
+    }
+
+}

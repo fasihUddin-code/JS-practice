@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+</body>
+
+<script>
+// var introduction = ["Hello","I","am","fasih"];
+// //var greeting = introduction[0];
+// //var name = introduction[3];
+
+// var [greeting,...intro] = introduction;
+
+
+// console.log(greeting);
+// console.log(intro[2]);
+
+//Destructuring Assignment with Functions
+
+function getArray(){
+    var arr =["fasih","zubair","kabeer","fahad"];
+    return arr;
+}
+
+var[std1,std2] = getArray();
+
+//console.log(std1);
+//console.log(std2);
+
+//Using Default Values
+
+var[greeting="hello",name="kaleem"]=["hi"];
+//console.log(greeting);
+//console.log(name);
+
+//Swapping Values using Destructuring Assignment
+var a=10,b=20;
+console.log("before swapping a : " + a + " b : " + b );
+
+[ a , b ] = [ b , a ];
+
+console.log("after swapping a : " + a + " b : " + b );
+
+
+</script>
+
+
+</html>

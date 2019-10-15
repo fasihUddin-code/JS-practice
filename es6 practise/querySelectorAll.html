@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div.myCLass{
+        height: 100px;
+        width: 100px;
+        background: slateblue;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <h1 id="demo">heading A</h1>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt reiciendis 
+        cumque vero! Ratione accusamus quae laboriosam id autem laudantium similique?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, repellat!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, repellat!</p>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <br>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <div class="myClass">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, enim!</p>
+    </div>
+    <form >
+        <input type="text" id="uname" name="userName">
+
+    </form>
+
+
+     <button onclick="myFunc();">Try It</button>   
+</body>
+
+<script>
+
+    //example 1
+    // function myFunc(){
+    //     var i,x;
+    //     var x = document.querySelectorAll("#demo");
+    //     for(i=0;i<x.length;i++){
+    //         x[i].style.background = "grey";
+    //         x[i].style.fontSize= "90px" ;
+    //     }
+
+    // }
+  
+  //example 2
+//   function myFunc(){
+//         var i,x;
+//         var x = document.querySelectorAll("p");
+        
+//             x[1].style.background = "grey";
+//             x[1].style.fontSize= "50px" ;
+
+//     }
+
+//example 3
+        // function myFunc(){
+        // var i,x;
+        // var x = document.querySelectorAll("a[target]");
+        
+        // for(i=0 ; i<x.length;i++){
+        //     x[i].style.display = "block";
+        //     x[i].style.border = "1px solid grey";
+
+        // }
+           
+
+        // }
+
+//example 4
+function myFunc(){
+         var i,x;
+         var x = document.querySelectorAll("h1,p,a");
+            for(i=0 ; i<x.length;i++){
+            x[i].style.background = "grey";
+            x[i].style.border= "2px solid black" ;
+             }
+}
+
+
+
+</script>
+
+
+</html>

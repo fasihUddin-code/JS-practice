@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+ <p id="demo"></p>   
+</body>
+<script>
+        class Car {
+            constructor (brand){
+                this.carName = brand;
+        
+            }
+        
+        }
+        
+        myCar = new Car("Ford");
+        
+       // document.getElementById("demo").innerHTML = myCar.carName;
+
+//Demonstration of how to add a method in a JavaScript Class.
+
+class Person{
+    constructor(name){
+        this.personName = name;
+    }
+    present(greeting){
+        return greeting + " my name is " + this.personName;
+    }
+
+}
+
+var info = new Person("zubair");
+document.getElementById("demo").innerHTML = info.present("Hello") ;
+
+ </script>       
+
+</html>

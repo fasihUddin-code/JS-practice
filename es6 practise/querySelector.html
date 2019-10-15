@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="h1">we are Learning JS</h1>
+<h2 class="geek myClass">Heading 2</h2>
+<h2>h2 Heading level</h2>
+<p class="geek">
+    Hello
+    <span>span tag inside paragraph</span>
+    <em>EMPHASIS Tag</em>
+    <span>YOUTUBE</span>
+</p>
+    
+<div class="show">
+    <p id="geekShow">paragraph inside Div tag</p>
+</div>
+<p id="p1">Ending paragraph</p>
+
+<button onclick="changeCss();">Try it</button>
+</body>
+<script>
+//element selector
+
+var result = document.querySelector("p,h2");
+//console.log(result);
+
+//ID selector
+
+var resultA = document.querySelector("#p1");
+//console.log(resultA);
+
+
+var resultA = document.querySelector("#p1, #h1");
+///console.log(resultA);
+
+
+//Class Selector
+var classSelector = document.querySelector(".myClass");
+console.log(classSelector);
+
+function changeCss(){
+    var x = document.querySelector("div.show > p#geekShow")
+    x.style.color = "yellow";
+}
+
+</script>
+
+
+</html>

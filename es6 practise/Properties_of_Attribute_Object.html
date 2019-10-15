@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hId" class="hClass">  
+        <!-- this is a comment -->
+        we are learning JavaScript
+    </h1>
+    <p id="pId" style="color: slateblue; background:tan;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+
+
+</body>
+
+<script>
+    //Attributes name, value
+    
+var ele1 = document.getElementById("pId");
+var ele2 = document.getElementById("hId");
+
+// // for(let i=0; i<result.attributes.length;i++){
+//     console.log("Attributes Name:"+result.attributes[i].nodeName);
+//     console.log("Attributes Value:"+result.attributes[i].nodeValue);
+// }
+
+//in attribute object property nodeName chnage into name and nodeValue change into value
+
+ for(let i=0; i<ele1.attributes.length;i++){
+    document.write("Attributes Name:"+ele1.attributes[i].name+"<br>");
+    document.write("Attributes Value:"+ele1.attributes[i].value+"<br>");
+}
+
+for(let i=0; i<ele2.attributes.length;i++){
+    document.write("Attributes Name:"+ele2.attributes[i].name+"<br>");
+    document.write("Attributes Value:"+ele2.attributes[i].value+"<br>");
+}
+
+
+
+</script>
+
+
+</html>

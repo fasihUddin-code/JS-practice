@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    main{
+        height: 100vh;
+        background: linear-gradient(to right top, #051937 , #004d79, #008793, #00bf72, #a8eb12);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    div.container3{
+        max-width: 500px;
+        height: auto;
+        background-color: #00cec9;
+        padding: 50px;
+        box-shadow: 1px 1px 15px 3px #2d3436;
+        text-align:center;
+
+
+    }
+
+    h1{
+        text-shadow: 1px 2px 1px white;
+        margin-bottom: 10px;
+
+    }
+    label{
+        display: block;
+        text-transform: capitalize;
+        margin-top: 30px;
+        float: left;
+    }
+    input{
+        width: 400px;
+        padding: 10px 0px;
+
+    }
+
+    .btn_wrapper button{
+        border-radius: 10px;
+        padding: 15px 30px;
+        color: white;
+        border: none;
+        background: #00b894;
+        box-shadow: 1px 1px 5px 1px #2d3436;
+        margin-top: 20px;
+        float: none;
+        
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tip Calculator</h1>
+        <div class="container3">
+            <label>Bill Amount</label>
+            <input type="text" name="" id="bill_amount">
+            <br>
+
+            <label>Tip Perc</label>
+            <input type="text" name="" id="tip_perc">
+            <br>
+
+            
+            <label>Tip Amount</label>
+            <input type="text" name="" id="tip_amount" disabled>
+            <br>
+
+            
+            <label>Total billed</label>
+            <input type="text" name="" id="total_billed" disabled>
+            <br>
+            
+          <div class="btn_wrapper">
+                <button onclick="tipCalc();">Calculator</button>
+          </div>
+                  
+
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <script>
+    const tipCalc = () => {
+        let Amount = document.getElementById('bill_amount').value;
+        let Perc = document.getElementById('tip_perc').value;
+        let tip = Amount * (Perc/100);
+        let Total = tip + Number(Amount) ; 
+        document.getElementById("tip_amount").value = tip;
+        document.getElementById("total_billed").value = to;
+
+    }
+    
+    
+    </script>
+    
+</body>
+</html>
